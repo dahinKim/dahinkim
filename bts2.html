@@ -1,0 +1,122 @@
+<style>
+	body {
+	        height: auto;
+	        width: 100%;
+	        background-image: url('img/배경.png');
+	        background-repeat : no-repeat;
+	        background-size : cover;
+	      }
+	a:link {
+	  color: white;
+	  text-decoration: none;
+	}
+	a:visited {
+	  color: pink;
+	  text-decoration: none;
+	}
+	a:hover {
+	  color: red;
+	  text-decoration: underline;
+	}
+	a:active {
+	  color: white;
+	  background-color: green;
+	}
+    background-image: url('배경.png');
+
+	}
+* {margin:0;padding:0;box-sizing:border-box;}
+ul, li {list-style:none;}
+
+
+.slidebox {max-width:700px;margin:0 auto;position:relative;}
+.slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+.slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#fff;width:100%;transition:all 1s;}
+.slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
+.slidebox .slidelist .slideitem > a img {max-width:100%;}
+
+.slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+.slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('./img/left-arrow.png') center center / 50% no-repeat;}
+.slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('./img/right-arrow.png') center center / 50% no-repeat;}
+
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {left:0;}
+#slide02:checked ~ .slidelist .slideitem {left:-100%;}
+#slide03:checked ~ .slidelist .slideitem {left:-200%;}
+#slide04:checked ~ .slidelist .slideitem {left:-300%;}
+#slide05:checked ~ .slidelist .slideitem {left:-400%;}
+#slide06:checked ~ .slidelist .slideitem {left:-500%;}
+#slide07:checked ~ .slidelist .slideitem {left:-600%;}
+#slide08:checked ~ .slidelist .slideitem {left:-700%;}
+#slide09:checked ~ .slidelist .slideitem {left:-800%;}
+#slide10:checked ~ .slidelist .slideitem {left:-900%;}
+#slide11:checked ~ .slidelist .slideitem {left:-1000%;}
+#slide12:checked ~ .slidelist .slideitem {left:-1100%;}
+#slide13:checked ~ .slidelist .slideitem {left:-1200%;}
+#slide14:checked ~ .slidelist .slideitem {left:-1300%;}
+#slide15:checked ~ .slidelist .slideitem {left:-1400%;}
+
+.slide-control [class*="control"] {display:none;}
+#slide01:checked ~ .slide-control .control01 {display:block;}
+#slide02:checked ~ .slide-control .control02 {display:block;}
+#slide03:checked ~ .slide-control .control03 {display:block;}
+#slide04:checked ~ .slide-control .control04 {display:block;}
+#slide05:checked ~ .slide-control .control05 {display:block;}
+#slide06:checked ~ .slide-control .control06 {display:block;}
+#slide07:checked ~ .slide-control .control07 {display:block;}
+#slide08:checked ~ .slide-control .control08 {display:block;}
+#slide09:checked ~ .slide-control .control09 {display:block;}
+#slide10:checked ~ .slide-control .control10 {display:block;}
+#slide11:checked ~ .slide-control .control11 {display:block;}
+#slide12:checked ~ .slide-control .control12 {display:block;}
+#slide13:checked ~ .slide-control .control13 {display:block;}
+#slide14:checked ~ .slide-control .control14 {display:block;}
+#slide15:checked ~ .slide-control .control15 {display:block;}
+
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:30px;width:60px;height:50px;position:relative;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#000;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* �����ϰ� ������ �� �ִ� style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#fff;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:300px;height:100%;background:#222;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+input[id="menuicon"]:checked + label + div {left:0;}
+
+
+</style>
+<body>
+	<input type="checkbox" id="menuicon">
+	<label for="menuicon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<div class="sidebar">
+		<div>
+			<br><br><br><br>
+	  <h1>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size="35" color="white" face="DX방탄고딕"> BTS</h1>
+
+	  <ul>
+	    <li><a href="bts1.html"><font size="5" face="DX방탄고딕">MEMBER</a></li>
+				<br>
+	    <li><a href="bts2.html">CONCEPT</a></li>
+			<br>
+	    <li><a href="bts3.html">SONG</a></li>
+			<br>
+	    <li><a href="bts4.html">ARMY</a></li>
+	  </ul>
+	</div>
+	</div>
+<center><img src="./img/방탄모음.jpg" width="1000" height=""600></center>
+<center><h3> CONCEPT </h3><center>
+  <p>방탄소년단은 본래 힙합 음악을 컨셉으로 꾸려졌던 그룹이다.<br>
+     결성 초기에는 RM을 중심으로 힙합 그룹으로 데뷔하려 했으며,<br> 안무보다는 노래와 랩에 집중하는 콘셉트를 가지고 있었다고 한다
+
+
+
+<div class="slidebox">
